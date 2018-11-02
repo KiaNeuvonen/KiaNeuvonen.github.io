@@ -1,9 +1,34 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+
 <!DOCTYPE html>
 <html>
 <body>
 <h1>Kian sivu</h1>
 <p>Tää on testi BOI.</p>
 </body>
+  <script>
+        alert("Tässä vähän parempi viesti");
+    </script>
+
+const App = () => {
+  const now = new Date();
+  const a = 10;
+  const b = 20;
+  return React.createElement(
+    'div', null,
+    React.createElement(
+      'p', null, 'Hello world, it is ', now.toString()
+    ),
+    React.createElement(
+      'p', null, a, ' plus ', b, ' is ', a + b
+    )
+  )
+}
+
+ReactDOM.render(React.createElement(App, null), document.getElementById('root'));
+
+
 const Hello = () => {
   return (
     <div>
