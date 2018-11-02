@@ -3,5 +3,25 @@
 <body>
 <h1>Kian sivu</h1>
 <p>Tää on testi BOI.</p>
+
+const Hello = () => {
+  return (
+    <div>
+      <p>Hello world</p>
+    </div>
+  )
+}
+
+const App = () => {
+  return (
+    <div>
+      <h1>Greetings</h1>
+      <Hello />
+    </div>
+  )
+}
+
+ReactDOM.render(<App />, document.getElementById('root'))
+
 </body>
 </html>
