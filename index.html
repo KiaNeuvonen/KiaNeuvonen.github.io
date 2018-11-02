@@ -1,6 +1,3 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-
 <!DOCTYPE html>
 <html>
 <body>
@@ -8,43 +5,6 @@ import ReactDOM from 'react-dom'
 <p>Tää on testi BOI.</p>
 </body>
   <script>
-        alert("Tässä vähän parempi viesti");
+        alert("Tässä vähän parempi ");
     </script>
-
-const App = () => {
-  const now = new Date();
-  const a = 10;
-  const b = 20;
-  return React.createElement(
-    'div', null,
-    React.createElement(
-      'p', null, 'Hello world, it is ', now.toString()
-    ),
-    React.createElement(
-      'p', null, a, ' plus ', b, ' is ', a + b
-    )
-  )
-}
-
-ReactDOM.render(React.createElement(App, null), document.getElementById('root'));
-
-
-const Hello = () => {
-  return (
-    <div>
-      <p>Hello world</p>
-    </div>
-  )
-}
-
-const App = () => {
-  return (
-    <div>
-      <h1>Greetings</h1>
-      <Hello />
-    </div>
-  )
-}
-
-ReactDOM.render(<App />, document.getElementById('root'))
 </html>
